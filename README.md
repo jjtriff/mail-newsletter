@@ -14,9 +14,9 @@ Simple subscription/desuscription system based on keywords and authorized publis
 
 ## Configuration
 
-- Subscribe and desubcribe keywords: `SIGNIN : string` and `SINGOUT : string`
-- The name of the list for subscribers `CLIENTS_LIST : string`
-- The name of the list of publishers subscribers `PUBLISHERS_LIST : string`
+- Subscribe and desubcribe keywords: `SIGNIN _KEYWORD: string` and `SINGOUT_KEYWORD : string`: This keyword will apply strictly as a rule for (de)subscribing
+- The name of the list for subscribers `CLIENTS_LIST : string`: this must match to an MSO email group
+- The name of the list of publishers subscribers `PUBLISHERS_LIST : string`: this must match to an MSO email group
 - The body of the following messages:
   - `SINGIN_OK_BODY : string` the body of the response sent to the user when the new subscription is OK
   - `SINGOFF_OK_BODY : string` the body of the response sent to the user when the new de-subscription is OK
