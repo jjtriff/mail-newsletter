@@ -21,3 +21,9 @@ Simple subscription/desuscription system based on keywords and authorized publis
   - `SINGIN_OK_BODY : string` the body of the response sent to the user when the new subscription is OK
   - `SINGOFF_OK_BODY : string` the body of the response sent to the user when the new de-subscription is OK
   - `MESSAGE_SENT_OK_BODY : string` the body of the response sent to the publisher once his message has been sent.
+- `KEEP_SINGIN_PROOF : bool`: to keep or not to keep every subscription mail sent to the app, that is the question
+- `KEEP_SINGOFF_PROOF : bool`: to keep or not to keep every de-subscription mail sent to the app, that is the other question
+- `KEEP_CONFIRMATION_MESSAGES : bool`: another obvious question
+- `WHERE_TO_KEEP_PUBLISHED_MESSAGES : string`: the name of the subfolder inside the inbox to keep published messages
+
+
