@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://unpkg.com/mermaid@7.0.14/dist/themes/mermaid.default.min.css">
+</head>
+<body>
+  <h1>Simple logic flow</h1>
+  <div class="mermaid">
+  graph TD
+    st1["New mail arrives"]-- "newEmailArrives() : bool" -->st1a(MailController)
+
+    st1a---st2{Decides}
+    st3>Subscription]
+    st4>De-subscription]
+    st5>Publish Content]
+    st2-->st3
+    st2-->st4
+    st2-->st5
+
+    st3-- "subscribeEmail() : bool" -->st3a(SubscriptionController)
+    st3a---st6[Register sender inside <br> the subscribers list]
+    st4-- "desubscribeEmail() : bool " -->st4a(SubscriptionController)
+    st4a---st7[Erase the sender from <br> from the subscribers list]
+    st5-- "sendEmail()" -->st5a(MailSender)
+    st5a---st8[Send message to every one <br>in the subscribers list]
+
+  </div>
+  <script src="https://unpkg.com/mermaid@7.0.14/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({startOnLoad:true});</script>
+</body>
+</html>
