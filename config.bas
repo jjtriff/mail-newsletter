@@ -21,10 +21,10 @@ Public PUBLISHERS_LIST as String : PUBLISHERS_LIST = "publicadores"
 
 ' The body of the following messages:
 ' the body of the response sent to the user when the new subscription is OK
-Public SINGIN_OK_BODY as String : SINGIN_OK_BODY = "Ud. se se ha registrado satisfactoriamente con " & APP_NAME & ". Si considera que esto fue un error puede darse de baja escribiendo a cog.lahabana"
+Public SINGIN_OK_BODY as String : SINGIN_OK_BODY = "Ud. se se ha registrado satisfactoriamente con " & APP_NAME & ". Si considera que esto fue un error puede darse de baja escribiendo a " & APP_EMAIL & " con la palabra " & SINGOUT_KEYWORD
 
 ' The body of the response sent to the user when the new desubscription is OK
-Public SINGOFF_OK_BODY as String : SINGOFF_OK_BODY = ""
+Public SINGOUT_OK_BODY as String : SINGOUT_OK_BODY = ""
 
 ' The body of the response sent to the publisher once his message has been sent.
 Public MESSAGE_SENT_OK_BODY as String : MESSAGE_SENT_OK_BODY = ""
@@ -33,7 +33,7 @@ Public MESSAGE_SENT_OK_BODY as String : MESSAGE_SENT_OK_BODY = ""
 Public KEEP_SINGIN_PROOF as Bool : KEEP_SINGIN_PROOF = ""
 
 ' To keep or not to keep every desubscription mail sent to the app, that is the other question
-Public KEEP_SINGOFF_PROOF as Bool : KEEP_SINGOFF_PROOF = ""
+Public KEEP_SINGOUT_PROOF as Bool : KEEP_SINGOUT_PROOF = ""
 
 ' Another obvious question
 Public KEEP_CONFIRMATION_MESSAGES as Bool : KEEP_CONFIRMATION_MESSAGES = ""
