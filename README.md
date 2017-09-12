@@ -26,4 +26,14 @@ Simple subscription/desuscription system based on keywords and authorized publis
 - `KEEP_CONFIRMATION_MESSAGES : bool`: another obvious question
 - `WHERE_TO_KEEP_PUBLISHED_MESSAGES : string`: the name of the subfolder inside the inbox to keep published messages
 
+## The different parts of the app
 
+- `app.bas`: The super class that controls all others
+- `mail-manager.bas`:  manager to handle the basic operations on the mail items (mv, delete, etc.)
+- `subscription-controller.bas`: the controller of every email string of clients to handle
+- `mail-sender.bas`: the responsible to handle the email sending process
+- `mail-editor.bas`: the helper responsible for editing the emails body to construct footers for subscription and desubscription
+
+## Simple logic flow
+
+Take a look at it rendering `logic-flowchart.html`
