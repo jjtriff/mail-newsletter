@@ -14,7 +14,8 @@ Simple subscription/desuscription system based on keywords and authorized publis
 
 ## Configuration
 
-- Subscribe and desubcribe keywords: `SIGNIN_KEYWORD: string` and `SINGOUT_KEYWORD : string`: This keyword will apply strictly as a rule for (de)subscribing
+- `APP_NAME : String`:  The name of the app
+- `APP_EMAIL : String`: The email from where the app is going to function
 - The name of the list for subscribers `CLIENTS_LIST : string`: this must match to an MSO email group
 - The name of the list of publishers subscribers `PUBLISHERS_LIST : string`: this must match to an MSO email group
 - The body of the following messages:
