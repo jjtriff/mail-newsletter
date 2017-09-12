@@ -14,7 +14,7 @@ Simple subscription/desuscription system based on keywords and authorized publis
 
 ## Configuration
 
-- Subscribe and desubcribe keywords: `SIGNIN _KEYWORD: string` and `SINGOUT_KEYWORD : string`: This keyword will apply strictly as a rule for (de)subscribing
+- Subscribe and desubcribe keywords: `SIGNIN_KEYWORD: string` and `SINGOUT_KEYWORD : string`: This keyword will apply strictly as a rule for (de)subscribing
 - The name of the list for subscribers `CLIENTS_LIST : string`: this must match to an MSO email group
 - The name of the list of publishers subscribers `PUBLISHERS_LIST : string`: this must match to an MSO email group
 - The body of the following messages:
@@ -29,6 +29,7 @@ Simple subscription/desuscription system based on keywords and authorized publis
 ## The different parts of the app
 
 - `app.bas`: The super class that controls all others
+- `config.bas`: Where we keep the configuration as global variables
 - `mail-manager.bas`:  manager to handle the basic operations on the mail items (mv, delete, etc.)
 - `subscription-controller.bas`: the controller of every email string of clients to handle
 - `mail-sender.bas`: the responsible to handle the email sending process
