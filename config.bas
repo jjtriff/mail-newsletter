@@ -17,7 +17,8 @@ Public CLIENTS_LIST as String : CLIENTS_LIST = "clientes"
 
 ' The name of the list of publishers subscribers 
 ' this must match to an MSO email group
-Public PUBLISHERS_LIST as String : PUBLISHERS_LIST = "publicadores"
+Public PUBLISHERS_ARRAY() as String
+PUBLISHERS_ARRAY(0) = "carlos.perezdesoy@maec.es"
 
 ' The body of the following messages:
 ' the body of the response sent to the user when the new subscription is OK
